@@ -9,7 +9,7 @@ def okey(name):
     params = {
         "title": name
     }
-    return render_template("base.html", **params)
+    return render_template("base2.html", **params)
 
 
 if __name__ == '__main__':

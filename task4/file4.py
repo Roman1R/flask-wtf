@@ -7,7 +7,7 @@ app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 def okey(type):
     params = {
     }
-    return render_template("base.html", **params)
+    return render_template("base2.html", **params)
 
 
 if __name__ == '__main__':
