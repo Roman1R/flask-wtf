@@ -13,15 +13,13 @@ def okey(name):
 
 @app.route("/training/<prof>")
 def good(prof):
-    if prof == "строитель" or prof == "инженер":
-        img = url_for("static", filename="img/image1.png")
-    elif prof == "врач" or prof == "костоправ":
-        img = url_for("static", filename="img/image2.png")
-    else:
-        img = url_for("static", filename="img/image3.png")
+    img1 = url_for("static", filename="img/image1.png")
+    img2 = url_for("static", filename="img/image2.png")
+    img3 = url_for("static", filename="img/image3.png")
 
     params = {
-        "image": img
+        "images": [img1, img2, img3],
+        "prof": prof
     }
     return render_template("base.html", **params)
 
