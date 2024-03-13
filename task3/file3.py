@@ -8,7 +8,7 @@ def okey(type):
     params = {
         "type": type,
     }
-    return render_template("base2.html", **params)
+    return render_template("index3.html", **params)
 
 
 if __name__ == '__main__':
