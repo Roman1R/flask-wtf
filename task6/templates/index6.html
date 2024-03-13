@@ -1,0 +1,13 @@
+{% extends "base6.html" %}
+
+{% block content %}
+
+<h1 class="main">Размещение по каютам</h1>
+{% set var = "Каюта №" %}
+{% for user in users %}
+<div>
+    <p class="spec">{{user}} - {{var}} {{loop.index}} {% if loop.first %}- капитан корабля{% endif %} </p>
+</div>
+{% endfor %}
+
+{% endblock %}
