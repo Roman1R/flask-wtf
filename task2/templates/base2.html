@@ -6,13 +6,6 @@
 <body>
 <h1>Миссия Колонизация Марса</h1>
 <h4>И на Марсе будут яблони цвести!</h4>
-{% if prof == "инженер" %}
-    {% set img = images[0] %}
-{% elif prof == "врач" %}
-    {% set img = images[1] %}
-{% else %}
-    {% set img = images[2] %}
-{% endif %}
     {% block content %}{% endblock %}
 </body>
 </html>

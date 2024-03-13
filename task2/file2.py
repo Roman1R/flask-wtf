@@ -3,14 +3,6 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 
 
-@app.route("/index/<name>")
-def okey(name):
-    params = {
-        "title": name
-    }
-    return render_template("index2.html", **params)
-
-
 @app.route("/training/<prof>")
 def good(prof):
     img1 = url_for("static", filename="img/image1.png")
@@ -21,7 +13,7 @@ def good(prof):
         "images": [img1, img2, img3],
         "prof": prof
     }
-    return render_template("base2.html", **params)
+    return render_template("index2.html", **params)
 
 
 if __name__ == '__main__':

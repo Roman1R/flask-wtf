@@ -2,5 +2,12 @@
 
 {% block content %}
     <h2>Научные симуляторы</h2>
+        {% if prof == "инженер" %}
+            {% set img = images[0] %}
+        {% elif prof == "врач" %}
+            {% set img = images[1] %}
+        {% else %}
+            {% set img = images[2] %}
+        {% endif %}
     <img src="{{ img }}" alt="АХТУНГ!">
 {% endblock %}
