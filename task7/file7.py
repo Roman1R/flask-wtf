@@ -9,7 +9,6 @@ def distribution(sex, age):
     params = {
         "fem": ["red", "pink"],
         "m": ["blue", "turquoise"],
-        "css_url": url_for(endpoint="static", filename="css/style.css"),
         "lil": url_for(endpoint="static", filename="img/LilCat.png"),
         "big": url_for(endpoint="static", filename="img/BigCat.png"),
         "sex": sex,
