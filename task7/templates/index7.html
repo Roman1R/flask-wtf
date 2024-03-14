@@ -1,5 +1,28 @@
 {% extends "base7.html" %}
 
 {% block content %}
+<h2 style="text-align: center">Оформление каюты</h2>
+<table style="margin: auto; table-layout: fixed; border-collapse: collapse">
+    <thead>
+        <tr style="background: gray">
+          <th>Цвет стен</th>
+          <th>Фотография</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        {% if sex == "male" %}{% set stylee=m[age % 2]%}
+        {% else %}{% set stylee=fem[age % 2] %}
+        {% endif %}
+        <td style="background: {{stylee}}">
+        </td>
+        <td style="width: 50%;">
+            {% if age < 21 %}<img src="{{ lil }}" alt="">
+            {% else %}<img src="{{ big }}" alt="">
+            {% endif %}
+        </td>
+    </tr>
+    </tbody>
+</table>
 
 {% endblock %}
