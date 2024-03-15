@@ -1,0 +1,7 @@
+{
+  "1": ["Melvin Hines", "static/img/Melvin.png" ,["биолог", "учитель"]],
+  "2": ["Richard Johnson", "static/img/Richard.png" ,["биотехнолог", "строитель"]],
+  "3": ["Ralph Atkins", "static/img/Ralph.png" ,["геолог", "логист"]],
+  "4": ["Hazel Johnson", "static/img/Hazel.png" ,["физик", "учитель", "электрик"]],
+  "5": ["Ronald Pena", "static/img/Ronald.png" ,["химик", "логопед"]]
+}

@@ -1,0 +1,14 @@
+{% extends "base9.html" %}
+{# jinja-filters.random #}
+
+{% block content %}
+{% set member=lst | random %}
+<style>
+.spec {
+    text-align: center;
+}
+</style>
+<h2 class="spec">{{ member[0] }}</h2>
+<p class="spec"><img src="{{ member[1] }}" alt="..."></p>
+<h3 class="spec">{{ ", ".join(member[2]) }}</h3>
+{% endblock %}
